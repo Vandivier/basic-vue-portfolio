@@ -82,7 +82,9 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# dist
+# /dist
+
 
 # Gatsby files
 .cache/
@@ -106,7 +108,6 @@ dist
 .tern-port
 
 .DS_Store
-/dist
 
 # local env files
 .env.local

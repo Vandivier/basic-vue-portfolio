@@ -19,6 +19,6 @@
 npm run build
 touch dist/.nojekyll
 git add dist/
-# git subtree add dist/
+git subtree add dist/
 git commit -m 'gh-pages deploy vue'
 git subtree push --prefix dist origin gh-pages
