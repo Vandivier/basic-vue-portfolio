@@ -2,7 +2,7 @@
 # abort on errors
 set -e
 # build
-yarn run build
+npm run build
 # navigate into the build output directory
 cd dist
 # if you are deploying to a custom domain
@@ -10,5 +10,6 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:Vandivier/basic-vue-portfolio.git main:gh-pages
+git subtree push --prefix dist origin gh-pages
+# git push -f git@github.com:Vandivier/basic-vue-portfolio.git main:gh-pages
 cd -
